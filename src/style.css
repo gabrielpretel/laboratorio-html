@@ -43,6 +43,52 @@ main {
 .container-item{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container-item:first-child{
+    animation: fade-in 1s linear forwards;
+    opacity: 0;
+}
+
+.container-item:nth-child(2){
+    animation: fade-in 1s 0.3s linear forwards;
+    opacity: 0;
+}
+
+.container-item:nth-child(3){
+    animation: fade-in 1s 0.6s linear forwards;
+    opacity: 0;
+}
+.container-item:nth-child(4){
+    animation: fade-in 1s 0.6s linear forwards;
+    opacity: 0;
+}
+.container-item:nth-child(5){
+    animation: fade-in 1s 0.6s linear forwards;
+    opacity: 0;
+}
+.container-item:nth-child(6){
+    animation: fade-in 1s 0.6s linear forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in { 
+	from { 
+		opacity: 0;
+	} 
+	to { 
+		opacity: 1;
+	} 
+}
+
+.container-item img:hover{
+    -webkit-box-shadow: 0px 0px 54px -14px rgba(33,36,41,1);
+    -moz-box-shadow: 0px 0px 54px -14px rgba(33,36,41,1);
+    box-shadow: 0px 0px 54px -14px rgba(33,36,41,0.5);
+    transform: scale(105%);
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .container-item img{
@@ -53,7 +99,6 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    padding-bottom: 3rem;
     font-size: 14px;    
 }
 
