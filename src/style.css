@@ -189,3 +189,32 @@ footer{
 .footer-item img{
     padding: 1rem;   
 }
+
+@media (max-width: 920px){
+    .links, .icons{
+        display: none;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-item{
+        padding: 1rem;
+        justify-content: start;
+        border-bottom: solid 1px white;
+        margin-top: 2rem;
+    }
+    .footer-item:first-child{
+        margin-top: 0rem;
+    }
+    .logo{
+        padding: 1rem;
+    }
+}
