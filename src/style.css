@@ -25,7 +25,7 @@ body{
 }
 
 header{   
-    max-width: var(--pagewidth);
+    
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -37,7 +37,7 @@ header{
 
 .logo{
     display: flex;
-    padding-left: 2rem;
+    padding: 2rem;
 }
 
 
@@ -46,22 +46,24 @@ header{
 }
 
 
-.links ul{
+.links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
 }
 
-.links ul li{
+.links li{
     padding: 0.8rem;
 }
 
-.links ul li a{
+.links li a{
     text-decoration: none;
     color: var(--primary);
     border: none;
 }
 
-.links ul li a:hover{
+.links li a:hover{
     border-bottom: 1px solid var(--primary);
     color: var(--primary);
 }
@@ -69,19 +71,16 @@ header{
 .icons {
     display: flex;
     align-items: center;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 
-.icons a{
+.icons img{
     padding-left: 2rem;
 }
 
 main {
     padding-top: 2rem;
-}
-
-.content{
-    max-width: var(--pagewidth);
+    
 }
 
 .title{
@@ -94,6 +93,8 @@ main {
     column-gap: 4rem;
     padding: 4rem; 
     padding-top: 2rem;
+    max-width: var(--pagewidth);
+    margin: 0 auto;  
 }
 
 .container-item{
@@ -160,7 +161,7 @@ main {
 }
 
 footer{  
-    max-width: var(--pagewidth);
+
     background-color: var(--primary);
     color: white;
     padding: 3rem;
